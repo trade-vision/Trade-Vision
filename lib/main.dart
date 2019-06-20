@@ -19,6 +19,7 @@ class MyApp extends StatelessWidget {
             ], 
             ), 
             ), 
+            Column(children: <Widget>[
             ButtonTheme(
               minWidth: 200.0,
               height: 100.0,
@@ -26,37 +27,40 @@ class MyApp extends StatelessWidget {
                 child: Text(
                   'Corriculum'
                 ),
-                onPressed: null,
+                onPressed: ()=>{},
               ),
             ), 
-                        ButtonTheme(
+            ButtonTheme(
               minWidth: 200.0,
               height: 100.0,
               child: RaisedButton(
                 child: Text(
                   'Games'
                 ),
-                onPressed: null,
+                onPressed: ()=>{},
               ),
-            ),  ButtonTheme(
+            ),  ]),
+            Column(children: <Widget>[
+            ButtonTheme(
               minWidth: 200.0,
               height: 100.0,
               child: RaisedButton(
                 child: Text(
                   'About Us'
                 ),
-                onPressed: null,
+                onPressed: ()=>{},
               ),
-            ),  ButtonTheme(
+            ), 
+            ButtonTheme(
               minWidth: 200.0,
               height: 100.0,
               child: RaisedButton(
                 child: Text(
                   'Be Apart of the Vision'
                 ),
-                onPressed: null,
+                onPressed: ()=>{},
               ),
-            ),
+            ),  ]),
             ])
           ),
         );
