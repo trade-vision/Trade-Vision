@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tradevision/services.dart';
 
 
 
@@ -13,55 +14,7 @@ class MyApp extends StatelessWidget {
           title: Text('Trade Vision'),
           backgroundColor: new Color(0xFF151026),
             ), 
-            body: Column(children: [
-            Card(child: Column(children: <Widget>[
-              Image.asset('assets/eye.jpg')
-            ], 
-            ), 
-            ), 
-            Column(children: <Widget>[
-            ButtonTheme(
-              minWidth: 200.0,
-              height: 100.0,
-              child: RaisedButton(
-                child: Text(
-                  'Corriculum'
-                ),
-                onPressed: ()=>{},
-              ),
-            ), 
-            ButtonTheme(
-              minWidth: 200.0,
-              height: 100.0,
-              child: RaisedButton(
-                child: Text(
-                  'Games'
-                ),
-                onPressed: ()=>{},
-              ),
-            ),  ]),
-            Column(children: <Widget>[
-            ButtonTheme(
-              minWidth: 200.0,
-              height: 100.0,
-              child: RaisedButton(
-                child: Text(
-                  'About Us'
-                ),
-                onPressed: ()=>{},
-              ),
-            ), 
-            ButtonTheme(
-              minWidth: 200.0,
-              height: 100.0,
-              child: RaisedButton(
-                child: Text(
-                  'Be Apart of the Vision'
-                ),
-                onPressed: ()=>{},
-              ),
-            ),  ]),
-            ])
+            body: Services()
           ),
         );
   }
