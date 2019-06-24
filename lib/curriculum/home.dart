@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flare_flutter/flare_actor.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -6,9 +7,13 @@ class HomePage extends StatelessWidget {
      return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
+           backgroundColor: new Color(0xFF151026),
           title: Text('Curriculum'),
-          backgroundColor: new Color(0xFF151026),
             ), 
+        body: FlareActor("assets/background.flr",
+            alignment: Alignment.center,
+            fit: BoxFit.fitWidth,
+            animation: "rotate"),
             // body: 
           ),
         );

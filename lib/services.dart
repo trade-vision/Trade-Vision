@@ -19,7 +19,7 @@ class Services extends StatelessWidget {
                   'Corriculum'
                 ),
                 onPressed: ()=>{
-                   Navigator.pushNamed(context, '/curriculum');
+                   Navigator.pushNamed(context, '/curriculum')
                 },
               ),
             ), 
