@@ -18,7 +18,9 @@ class Services extends StatelessWidget {
                 child: Text(
                   'Corriculum'
                 ),
-                onPressed: ()=>{},
+                onPressed: ()=>{
+                   Navigator.pushNamed(context, '/curriculum')
+                },
               ),
             ), 
             ButtonTheme(
