@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Text('Trade Vision'),
-          backgroundColor: new Color(0xFF151026),
+          backgroundColor: Colors.green[400],
             ), 
             body: Services()
           ),

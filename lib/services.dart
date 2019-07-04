@@ -6,17 +6,18 @@ class Services extends StatelessWidget {
    build(context) {
     return Column(children: [
             Card(child: Column(children: <Widget>[
-              Image.asset('assets/eye.jpg')
+              Image.asset('assets/newLogo.png')
             ], 
             ), 
             ), 
             Column(children: <Widget>[
             ButtonTheme(
-              minWidth: 200.0,
+              minWidth: 400.0,
               height: 100.0,
+              buttonColor: Colors.pink[100],
               child: RaisedButton(
                 child: Text(
-                  'Corriculum'
+                  'Curriculum'
                 ),
                 onPressed: ()=>{
                    Navigator.pushNamed(context, '/curriculum')
@@ -24,8 +25,9 @@ class Services extends StatelessWidget {
               ),
             ), 
             ButtonTheme(
-              minWidth: 200.0,
+              minWidth: 400.0,
               height: 100.0,
+              buttonColor: Colors.pink[100],
               child: RaisedButton(
                 child: Text(
                   'Games'
@@ -35,8 +37,9 @@ class Services extends StatelessWidget {
             ),  ]),
             Column(children: <Widget>[
             ButtonTheme(
-              minWidth: 200.0,
+              minWidth: 400.0,
               height: 100.0,
+              buttonColor: Colors.pink[100],
               child: RaisedButton(
                 child: Text(
                   'About Us'
@@ -45,8 +48,9 @@ class Services extends StatelessWidget {
               ),
             ), 
             ButtonTheme(
-              minWidth: 200.0,
+              minWidth: 400.0,
               height: 100.0,
+              buttonColor: Colors.pink[100],
               child: RaisedButton(
                 child: Text(
                   'Be Apart of the Vision'
