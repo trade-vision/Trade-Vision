@@ -10,10 +10,10 @@ class HomePage extends StatelessWidget {
            backgroundColor: new Color(0xFF151026),
           title: Text('Curriculum'),
             ), 
-        body: FlareActor("assets/background.flr",
-            alignment: Alignment.center,
-            fit: BoxFit.fitWidth,
-            animation: "rotate"),
+        // body: FlareActor("assets/background.flr",
+        //     alignment: Alignment.center,
+        //     fit: BoxFit.fitWidth,
+        //     animation: "rotate"),
             // body: 
           ),
         );
