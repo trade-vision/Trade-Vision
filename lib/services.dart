@@ -16,7 +16,7 @@ class Services extends StatelessWidget {
               height: 100.0,
               child: RaisedButton(
                 child: Text(
-                  'Corriculum'
+                  'Curriculum'
                 ),
                 onPressed: ()=>{
                    Navigator.pushNamed(context, '/curriculum')
