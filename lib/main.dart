@@ -16,8 +16,17 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Text('Trade Vision'),
-          backgroundColor: new Color(0xFF151026),
-            ), 
+          backgroundColor: Color(0xff3CB365),
+          actions: <Widget>[
+            // action button
+            IconButton(
+              icon:  Icon(Icons.airline_seat_individual_suite),
+              onPressed: () {
+               
+              },
+            ),
+          ],
+        ),
             body: Services()
           ),
         );

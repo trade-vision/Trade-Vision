@@ -6,17 +6,22 @@ class Services extends StatelessWidget {
    build(context) {
     return Column(children: [
             Card(child: Column(children: <Widget>[
-              Image.asset('assets/eye.jpg')
+              Image.asset('assets/newLogo.png')
             ], 
             ), 
             ), 
             Column(children: <Widget>[
             ButtonTheme(
-              minWidth: 200.0,
+              minWidth: 300.0,
               height: 100.0,
+              buttonColor: Colors.green[200],
               child: RaisedButton(
                 child: Text(
-                  'Curriculum'
+                  'Curriculum',
+                   style: new TextStyle(
+                    fontSize: 20.0,
+                    color: Colors.black,
+                  ),
                 ),
                 onPressed: ()=>{
                    Navigator.pushNamed(context, '/curriculum')
@@ -24,32 +29,47 @@ class Services extends StatelessWidget {
               ),
             ), 
             ButtonTheme(
-              minWidth: 200.0,
+              minWidth: 300.0,
               height: 100.0,
+              buttonColor: Colors.blue,
               child: RaisedButton(
                 child: Text(
-                  'Games'
+                  'Games',
+                   style: new TextStyle(
+                    fontSize: 20.0,
+                    color: Colors.black,
+                  ),
                 ),
                 onPressed: ()=>{},
               ),
             ),  ]),
             Column(children: <Widget>[
             ButtonTheme(
-              minWidth: 200.0,
+              minWidth: 300.0,
               height: 100.0,
+              buttonColor: Colors.purple[200],
               child: RaisedButton(
                 child: Text(
-                  'About Us'
+                  'About Us',
+                   style: new TextStyle(
+                    fontSize: 20.0,
+                    color: Colors.black,
+                  ),
                 ),
                 onPressed: ()=>{},
               ),
             ), 
             ButtonTheme(
-              minWidth: 200.0,
+              minWidth: 300.0,
               height: 100.0,
+              buttonColor: Colors.pink[200],
               child: RaisedButton(
                 child: Text(
-                  'Be Apart of the Vision'
+                  'Be Apart of the Vision',
+                   style: new TextStyle(
+                    fontSize: 20.0,
+                    color: Colors.black,
+                  ),
                 ),
                 onPressed: ()=>{},
               ),
