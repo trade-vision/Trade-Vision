@@ -31,7 +31,7 @@ class _HomePageState extends State<HomePage>
       (
         elevation: 2.0,
         backgroundColor: Colors.white,
-        title: Text('Dashboard', style: TextStyle(color: Colors.black, fontWeight: FontWeight.w700, fontSize: 30.0)),
+        title: Text('Basic', style: TextStyle(color: Colors.black, fontWeight: FontWeight.w700, fontSize: 30.0)),
         actions: <Widget>
         [
           Container
@@ -43,7 +43,7 @@ class _HomePageState extends State<HomePage>
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>
               [
-                Text('beclothed.com', style: TextStyle(color: Colors.blue, fontWeight: FontWeight.w700, fontSize: 14.0)),
+                Text('Difficulty', style: TextStyle(color: Colors.blue, fontWeight: FontWeight.w700, fontSize: 14.0)),
                 Icon(Icons.arrow_drop_down, color: Colors.black54)
               ],
             ),
@@ -72,8 +72,8 @@ class _HomePageState extends State<HomePage>
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>
                     [
-                      Text('Total Views', style: TextStyle(color: Colors.blueAccent)),
-                      Text('265K', style: TextStyle(color: Colors.black, fontWeight: FontWeight.w700, fontSize: 34.0))
+                      Text('Total Completed:', style: TextStyle(color: Colors.blueAccent)),
+                      Text('0', style: TextStyle(color: Colors.black, fontWeight: FontWeight.w700, fontSize: 34.0))
                     ],
                   ),
                   Material
@@ -113,8 +113,8 @@ class _HomePageState extends State<HomePage>
                     )
                   ),
                   Padding(padding: EdgeInsets.only(bottom: 16.0)),
-                  Text('General', style: TextStyle(color: Colors.black, fontWeight: FontWeight.w700, fontSize: 24.0)),
-                  Text('Images, Videos', style: TextStyle(color: Colors.black45)),
+                  Text('HTML', style: TextStyle(color: Colors.black, fontWeight: FontWeight.w700, fontSize: 24.0)),
+                  Text('Structure/Content', style: TextStyle(color: Colors.black45)),
                 ]
               ),
             ),
@@ -140,107 +140,12 @@ class _HomePageState extends State<HomePage>
                     )
                   ),
                   Padding(padding: EdgeInsets.only(bottom: 16.0)),
-                  Text('Alerts', style: TextStyle(color: Colors.black, fontWeight: FontWeight.w700, fontSize: 24.0)),
-                  Text('All ', style: TextStyle(color: Colors.black45)),
+                  Text('CSS', style: TextStyle(color: Colors.black, fontWeight: FontWeight.w700, fontSize: 24.0)),
+                  Text('Style', style: TextStyle(color: Colors.black45)),
                 ]
               ),
             ),
           ),
-          _buildTile(
-            Padding
-                (
-                  padding: const EdgeInsets.all(24.0),
-                  child: Column
-                  (
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>
-                    [
-                      Row
-                      (
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: <Widget>
-                        [
-                          Column
-                          (
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>
-                            [
-                              Text('Revenue', style: TextStyle(color: Colors.green)),
-                              Text('\$16K', style: TextStyle(color: Colors.black, fontWeight: FontWeight.w700, fontSize: 34.0)),
-                            ],
-                          ),
-                          DropdownButton
-                          (
-                            isDense: true,
-                            value: actualDropdown,
-                            onChanged: (String value) => setState(()
-                            {
-                              actualDropdown = value;
-                              actualChart = chartDropdownItems.indexOf(value); // Refresh the chart
-                            }),
-                            items: chartDropdownItems.map((String title)
-                            {
-                              return DropdownMenuItem
-                              (
-                                value: title,
-                                child: Text(title, style: TextStyle(color: Colors.blue, fontWeight: FontWeight.w400, fontSize: 14.0)),
-                              );
-                            }).toList()
-                          )
-                        ],
-                      ),
-                      Padding(padding: EdgeInsets.only(bottom: 4.0)),
-                      Sparkline
-                      (
-                        data: charts[actualChart],
-                        lineWidth: 5.0,
-                        lineColor: Colors.greenAccent,
-                      )
-                    ],
-                  )
-                ),
-          ),
-          _buildTile(
-            Padding
-            (
-              padding: const EdgeInsets.all(24.0),
-              child: Row
-              (
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: <Widget>
-                [
-                  Column
-                  (
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>
-                    [
-                      Text('Shop Items', style: TextStyle(color: Colors.redAccent)),
-                      Text('173', style: TextStyle(color: Colors.black, fontWeight: FontWeight.w700, fontSize: 34.0))
-                    ],
-                  ),
-                  Material
-                  (
-                    color: Colors.red,
-                    borderRadius: BorderRadius.circular(24.0),
-                    child: Center
-                    (
-                      child: Padding
-                      (
-                        padding: EdgeInsets.all(16.0),
-                        child: Icon(Icons.store, color: Colors.white, size: 30.0),
-                      )
-                    )
-                  )
-                ]
-              ),
-            ),
-            onTap: () => {},
-          )
         ],
         staggeredTiles: [
           StaggeredTile.extent(2, 110.0),
