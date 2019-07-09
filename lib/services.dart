@@ -61,7 +61,8 @@ class Services extends StatelessWidget {
                   Text('Curriculum/Lessons', style: TextStyle(color: Colors.black45)),
                 ]
               ),
-            ),
+            ), 
+            onTap: () => Navigator.pushNamed(context, '/curriculum'),
           ),
           _buildTile(
             Padding
