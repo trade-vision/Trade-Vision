@@ -24,11 +24,20 @@ class _HomePageState extends State<HomePage>
         elevation: 2.0,
         backgroundColor: Colors.white,
         title: Text('Basic', style: TextStyle(color: Colors.black, fontWeight: FontWeight.w700, fontSize: 30.0)),
+        leading: Builder(
+    builder: (BuildContext context) {
+      return IconButton(
+        icon: const Icon(Icons.arrow_back, color: Colors.black),
+        onPressed: () => Navigator.of(context).pop(),
+        tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
+      );
+    },
+  ),
         actions: <Widget>
         [
           Container
           (
-            margin: EdgeInsets.only(right: 8.0),
+            margin: EdgeInsets.only(right: 55.0),
             child: Row
             (
               mainAxisAlignment: MainAxisAlignment.center,
